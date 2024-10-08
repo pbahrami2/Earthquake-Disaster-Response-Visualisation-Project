@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Earthquake Impact Visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #map {
+            margin-top: 20px;
+        }
+
+        label, select, input[type=range] {
+            margin: 10px;
+        }
+
+        /* Legend container style */
+        #legend {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 300px;
+            top: 50px; /* Adjust if needed */
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds shadow for better visibility */
+        }
+
+        #icon-legend {
+            position: absolute;
+            right: 10px; /* Positioning adjusted for the right side */
+            top: 10px; /* Positioning adjusted for the top side */
+            background: #fff; /* Background color for better visibility */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc; /* Adds a subtle border */
+        }
+
+        /* Individual legend box style */
+        .legend-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px; /* Adjust the margin if needed */
+            color: black; /* Color of the labels */
+            font-size: 10px; /* Size of the labels */
+        }
+
+        #animation-controls {
+            position: absolute;  
+            left: 400px;        
+            top: 10px;          
+        }
+
+        #animation-controls button {
+            display: block;  
+            margin-bottom: 5px;  
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 120px;
+            height: auto;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <label for="timeSlider">Select Time:</label>
+    <input type="range" id="timeSlider" min="0" />
+    <label id="timeLabel"></label><br>
+
+    <label for="categorySelector">Select Category:</label>
+    <select id="categorySelector"></select>
+    <div id="legend"></div>
+    <div id="tooltip"></div>
+    <div id="animation-controls">
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+    </div>
+    
+    <div id="map"></div>
+    <div id="icon-legend"></div> <!-- New div for icon legend -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
