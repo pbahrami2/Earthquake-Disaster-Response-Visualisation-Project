@@ -28,9 +28,19 @@ The St. Himark Earthquake Response project created an interactive data visualiza
 ## Insights Deep Dive
 
 - **Infrastructure Damage**: A heatmap of infrastructure damage revealed that Neighborhoods 3 and 8 had the highest damage severity, with average damage ratings of 7.67 and 7.54, respectively.
+![image](https://github.com/user-attachments/assets/6180340a-7aef-4635-90c6-e3d41df1f5a3)
+
 - **Impact vs Vulnerability**: An interactive scatter plot comparing neighborhood impact and vulnerability identified Old Town as having the highest vulnerability, emphasizing the need for urgent resource deployment.
+![image](https://github.com/user-attachments/assets/2f0926a4-39c2-47b5-904c-69a650538298)
+
 - **Correlation Analysis**: A correlation matrix indicated a significant relationship between damage to roads and bridges and damage to water and sewer systems. This interdependence suggested that emergency services should prioritize repairs in areas where both sectors were heavily impacted.
+![image](https://github.com/user-attachments/assets/26ab9899-58f5-4240-b1e2-761607591667)
+
 - **Temporal Analysis**: Over the course of the disaster, damage severity escalated rapidly from April 8 to April 10, highlighting the importance of timely interventions.
+![image](https://github.com/user-attachments/assets/9bba5c29-03c9-44f0-88fa-a1971d5c9782) ![image](https://github.com/user-attachments/assets/2798f7bb-e1d5-400e-a471-1f13e0d392a8)
+
+
+
 
 ## Recommendations
 
